@@ -19,12 +19,7 @@ class ProductManajer {
     this.#arr = [];
   }
 
-  // addProduct(title, description, price, thumbnail, code, stock) {
   addProduct(...params) {
-    // if (arguments.length !== 6) {
-    //   console.log("Error : Cantidad parametros incorrecta");
-    //   return;
-    // }
     if (params.length !== 6) {
       console.error("Error: Incorrect number of parameters");
       return;
